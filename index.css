@@ -1,0 +1,37 @@
+.Header-container {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+.Header {
+  display: flex;
+}
+.Header > li {
+  padding: 1px 10px;
+  list-style: none;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: blue;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  height: 350px;
+  width: 200px;
+  margin: 4px;
+}
+
+.card-img {
+  width: 80%;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
