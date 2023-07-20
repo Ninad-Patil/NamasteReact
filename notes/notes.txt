@@ -1,2 +1,4 @@
 never use anchor tag and herf for routing as it 
 will reload the whole page again.
+
+Link Internally uses anchor tag
