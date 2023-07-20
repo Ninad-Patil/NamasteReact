@@ -1,6 +1,7 @@
 import React from "react";
 import Cards from "./Cards";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 function Body() {
   const [cardData, setCardData] = useState([]);
 
@@ -20,7 +21,11 @@ function Body() {
       <div className="card-container">
         {cardData.map((card) => {
           //always check for return
-          return <Cards key={card.data.id} card={card} />;
+          return (
+            <Link key={card.data.id} to={"/restaurant/" + card.data.id}>
+              <Cards card={card} />
+            </Link>
+          );
         })}
       </div>
     </>
